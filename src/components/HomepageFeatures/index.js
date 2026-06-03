@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'SAP Modules & Solutions',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/img1.svg').default,
     description: (
       <div className={styles.linkContainer}>
         <Link className={styles.linkItem} to="/docs/modules-sap/fico">
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Enterprise resource planning',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/img2.svg').default,
     description: (
       <div className={styles.linkContainer}>
         <Link className={styles.linkItem} to="/docs/enterprise-resource/sap-public-cloud">
