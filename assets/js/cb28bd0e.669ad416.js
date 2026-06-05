@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunksap_documentation_clone=globalThis.webpackChunksap_documentation_clone||[]).push([[3761],{5316(a){a.exports=JSON.parse('{"metadata":{"permalink":"/sap-help-portal/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

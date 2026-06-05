@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunksap_documentation_clone=globalThis.webpackChunksap_documentation_clone||[]).push([[1903],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/sap-help-portal/blog","blogTitle":"Blog","authorsListPath":"/sap-help-portal/blog/authors"}')}}]);

@@ -4,8 +4,8 @@
   <ShortName>My SAP Help Portal</ShortName>
   <Description>Search My SAP Help Portal</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://lakshminarayananc13.github.io/sap-help-portal/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://lakshminarayananc13.github.io/sap-help-portal/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://lakshminarayananc13.github.io/sap-help-portal/opensearch.xml" />
-  <moz:SearchForm>https://lakshminarayananc13.github.io/sap-help-portal/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://lakshminarayananc13.github.io/SAP_Help_portal/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://lakshminarayananc13.github.io/SAP_Help_portal/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://lakshminarayananc13.github.io/SAP_Help_portal/opensearch.xml" />
+  <moz:SearchForm>https://lakshminarayananc13.github.io/SAP_Help_portal/</moz:SearchForm>
 </OpenSearchDescription>
