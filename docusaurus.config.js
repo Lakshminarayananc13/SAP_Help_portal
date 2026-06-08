@@ -27,15 +27,6 @@ const config = {
 
   onBrokenLinks: 'throw',
 
-  headTags: [
-    {
-      tagName: 'meta',
-      attributes: {
-        name: 'algolia-site-verification',
-        content: '9B1206479246DF3B',
-      },
-    },
-  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -78,7 +69,18 @@ const config = {
       }),
     ],
   ],
-
+themes: [
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    {
+      hashed: true,
+      language: ["en"],
+      indexDocs: true,
+      indexBlog: true,
+      indexPages: true,
+    },
+  ],
+],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -115,6 +117,10 @@ const config = {
                 href: 'https://discord.com/invite/docusaurus',
               },
             ],
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -168,13 +174,7 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      algolia: {
-        // Replace the placeholders below with your Algolia credentials.
-        // If you prefer local search, install a local search plugin instead.
-        appId: '6T0WTYDA1T',
-        apiKey: '09f1fd028069606023275225836750d0',
-        indexName: 'sap_data_index',
-      },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
