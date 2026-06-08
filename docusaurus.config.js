@@ -15,27 +15,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://lakshminarayananc13.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/sap-help-portal/',
+ url: 'https://lakshminarayananc13.github.io',
+baseUrl: '/SAP_Help_portal/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SAP', // Usually your GitHub org/user name.
-  projectName: 'sap-help-portal', // Usually your repo name.
+organizationName: 'lakshminarayananc13',
+projectName: 'SAP_Help_portal',
 
   onBrokenLinks: 'throw',
 
-  headTags: [
-    {
-      tagName: 'meta',
-      attributes: {
-        name: 'algolia-site-verification',
-        content: '9B1206479246DF3B',
-      },
-    },
-  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -55,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+  'https://github.com/lakshminarayananc13/SAP_Help_portal/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -65,8 +52,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+  editUrl:
+  'https://github.com/lakshminarayananc13/SAP_Help_portal/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,7 +65,17 @@ const config = {
       }),
     ],
   ],
-
+themes: [
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    {
+      indexDocs: true,
+      indexBlog: true,
+      indexPages: true,
+      language: "en",
+    },
+  ],
+],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -117,9 +114,13 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'search',
             position: 'right',
+          },
+          {
+             href: 'https://github.com/lakshminarayananc13/SAP_Help_portal',
+  label: 'GitHub',
+  position: 'right',
           },
         ],
       },
@@ -160,21 +161,15 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                  label: 'GitHub',
+  href: 'https://github.com/lakshminarayananc13/SAP_Help_portal',
               },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      algolia: {
-        // Replace the placeholders below with your Algolia credentials.
-        // If you prefer local search, install a local search plugin instead.
-        appId: '6T0WTYDA1T',
-        apiKey: '09f1fd028069606023275225836750d0',
-        indexName: 'sap_data_index',
-      },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
